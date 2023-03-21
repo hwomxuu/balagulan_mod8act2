@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <title>Formative Assessment 02 - Simple Calc</title>
+</head>
+<body>
+    <div id="instructions">
+        <div>
+            <p>Instructions for use:</p>
+            <ul>
+                <li>Input two numbers you want to perform equations with.</li>
+                <li>Choose the symbol of your choice to perform the desired equation (e.g. Click the "+" button if you want to add the numbers).</li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <h1>calcU</h1>
+        <h3>This page is .....</h3>
+        <div id="inputs">
+            <input type="text" id="num1" placeholder="First number">
+            <input type="text" id="num2" placeholder="Second number">
+        </div>
+        <div id="buttons">
+            <button onclick="numAddition(document.getElementById('num1').value,document.getElementById('num2').value)">+</button>
+            <button onclick="numSubtraction(document.getElementById('num1').value,document.getElementById('num2').value)">-</button>
+            <button onclick="numMultiplication(document.getElementById('num1').value,document.getElementById('num2').value)">*</button>
+            <button onclick="numDivision(document.getElementById('num1').value,document.getElementById('num2').value)">/</button>
+            <button onclick="numModulo(document.getElementById('num1').value,document.getElementById('num2').value)">%</button>
+        </div>
+        <p id="output">Results will be displayed here.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
